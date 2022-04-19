@@ -11,25 +11,25 @@ myImage.onclick = function() {
     }
 }
 
-//欢迎页面
-var myButton = document.querySelector('button');
-var myHeading = document.querySelector('#header h1');
+// //欢迎页面
+// var myButton = document.querySelector('button');
+// var myHeading = document.querySelector('#header h1');
 
-function setUserName() {
-    var myName = prompt('请输入你的名字。');
-    if(!myName || myName === null) {
-        setUserName();
-    } else {
-        localStorage.setItem('name', myName);
-        myHeading.innerHTML = '你好，' + myName;
-    }
-}
-if(!localStorage.getItem('name')) {
-    setUserName();
-} else {
-    var storedName = localStorage.getItem('name');
-    myHeading.textContent = '你好，' + storedName;
-}
-myButton.onclick = function() {
-    setUserName();
-}
+// function setUserName() {
+//     var myName = prompt('请输入你的名字。');
+//     if(!myName || myName === null) {
+//         setUserName();
+//     } else {
+//         localStorage.setItem('name', myName);
+//         myHeading.innerHTML = '你好，' + myName;
+//     }
+// }
+// if(!localStorage.getItem('name')) {
+//     setUserName();
+// } else {
+//     var storedName = localStorage.getItem('name');
+//     myHeading.textContent = '你好，' + storedName;
+// }
+// myButton.onclick = function() {
+//     setUserName();
+// }
